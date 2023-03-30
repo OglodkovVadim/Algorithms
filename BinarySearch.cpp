@@ -1,5 +1,5 @@
 template<typename Iterator, typename T>
-T binarySearch(Iterator begin, Iterator end, T val)
+T binary_search(Iterator begin, Iterator end, T val)
 {
     end--; // increase becouse end point to end elem + 1
     while (std::distance(begin, end) >= 0) {
