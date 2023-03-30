@@ -12,7 +12,7 @@ ___
 ___
 
 ## 2. Quick sort:
-![](https://bournetocode.com/projects/GCSE_Computing_Fundamentals/pages/img/binary_search.gif)
+![](https://media.proglib.io/wp-uploads/-000/1/596b723189cb1_Zmjm3wv.gif)
 ### Asymptotic complexity:
 + Average: O(log(n))
 ___
