@@ -7,7 +7,7 @@ ___
 ## 1. Binary search:
 ![](https://bournetocode.com/projects/GCSE_Computing_Fundamentals/pages/img/binary_search.gif)
 ### Asymptotic complexity:
-+ Average: O(n*log(n))
++ Average: O(log(n))
 + Amortization: O(n^2)
 ___
 
