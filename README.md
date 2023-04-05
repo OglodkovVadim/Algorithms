@@ -5,7 +5,7 @@ This repository is dedicated to basic algorithms. They help to understand how st
 ___
 
 ## 1. Binary search:
-![](https://bournetocode.com/projects/GCSE_Computing_Fundamentals/pages/img/binary_search.gif)
+![](https://ds055uzetaobb.cloudfront.net/image_optimizer/717403b1368376cb6f915e6b4beeb3a7ad54105e.gif)
 ### Asymptotic complexity:
 + Average: O(log(n))
 + Amortization: O(n^2)
