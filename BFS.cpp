@@ -8,12 +8,12 @@ class Node
 public:
 	std::string name;
 	std::list<Node> friends;
-	Node(const std::string name, std::list<Object> friends) : name(name), friends(friends) {};
+	Node(const std::string name, std::list<Node> friends) : name(name), friends(friends) {};
 	Node(const std::string name) : name(name) {};
 
 };
 
-std::string BFS(std::list<Object>& queue, std::string findName)
+std::string BFS(std::list<Node>& queue, std::string findName)
 {
 	while (queue.size() != 0) {
 		if (queue.front().name != findName) {
