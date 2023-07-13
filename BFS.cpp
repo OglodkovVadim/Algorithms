@@ -3,13 +3,13 @@
 #include <string>
 
 // struct of node
-class Object
+class Node
 {
 public:
 	std::string name;
-	std::list<Object> friends;
-	Object(const std::string name, std::list<Object> friends) : name(name), friends(friends) {};
-	Object(const std::string name) : name(name) {};
+	std::list<Node> friends;
+	Node(const std::string name, std::list<Object> friends) : name(name), friends(friends) {};
+	Node(const std::string name) : name(name) {};
 
 };
 
@@ -30,16 +30,16 @@ std::string BFS(std::list<Object>& queue, std::string findName)
 int main()
 {
   // create graph using our node - class Object
-	Object obj1("People_1", std::list<Object> {Object("People_4"), Object("People_7"), Object("People_10")});
-	Object obj2("People_2", std::list<Object> {Object("People_5"), Object("People_8"), Object("People_11")});
-	Object obj3("People_3", std::list<Object> {Object("People_6"), Object("People_9"), Object("People_12")});
+	Node node1("People_1", std::list<Node> {Node("People_4"), Node("People_7"), Node("People_10")});
+	Node node2("People_2", std::list<Node> {Node("People_5"), Node("People_8"), Node("People_11")});
+	Node node3("People_3", std::list<Node> {Node("People_6"), Node("People_9"), Node("People_12")});
   // create main node to link graph's branches
-	Object obj("Me", std::list<Object> {Object(obj1.name, obj1.friends), Object(obj2.name, obj2.friends), Object(obj3.name, obj3.friends)});
+	Node node("Me", std::list<Node> {Node(node1.name, node1.friends), Node(node2.name, node2.friends), Node(node3.name, node3.friends)});
 
-	std::list<Object> queue;
+	std::list<Node> queue;
 	std::string findName = "Kevin";
 
-	queue.push_back(obj);
+	queue.push_back(node);
 	std::cout << BFS(queue, findName) << std::endl;
 
 
